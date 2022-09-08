@@ -1,0 +1,73 @@
+
+header  {
+  background-color: lightslategray;
+  border: 1px solid black;
+  border-radius: 5px;height: 14vh;
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr 1fr;
+}
+
+.logo {
+  background-color: aliceblue;
+  border-right: 1px solid black;
+  height: 100%;
+}
+
+.bar  {
+  margin: auto;
+}
+
+form  {
+  display: flex;
+}
+
+input[type="text" i] {
+  padding: 1px 2px;
+  font-size: 2em;
+}
+
+button  {
+  font-size: 2em;
+  margin: auto;
+  cursor: pointer;
+}
+
+.shoppingcart {
+  font-size: 45px;
+  margin: auto;
+}
+
+.profile {
+  font-size: 45px;
+  margin: auto;
+}
+
+a:visited {color: black;}
+a:hover {color: darkcyan;}
+
+
+main  {
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 1.5vh;
+  height: 70vh;
+}
+
+
+footer  {
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 1.5vh;
+  height: 10vh;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 9fr;
+
+}
+
+.socialmedia  {
+  font-size: 25px;
+  margin: auto;
+}
