@@ -4,43 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleRegProd.css">
   
-  <title>Set Product</title>
+  <title>Registro de productos</title>
 </head>
 <body>
 
   <main>
-    <h2>Product Details</h2>
+    
 
     <form action="">
 
-      <p>
-        Product Name: <input type="text" name="prod_name">
-        Product ID: <input type="text" name="prod_id">
-        Description: <input type="text" name="prod_description">
-      </p>
-      <p>
-        Category:
-        <select name="prod_category">
-          <option></option>
-          <option>Apparel & Accessories</option>
-          <option>Electronics</option>
-          <option>Food & Beverages</option>
-          <option>Health & Beauty</option>
-          <option>Sporting Goods</option>
-        </select>
+      <h2>Registro del producto</h2>
+      <table>
+        <tr>
+          <td>Nombre:</td>
+          <td><input placeholder="Nombre del producto que aparecera en la pagina" class = "input" type="text" name="prod_name"></td>
+        </tr>
 
-        Brand: <input type="text" name="prod_description">
-      </p>
-      <p>
-        Price: <input type="text" name="prod_description">
-      </p>
+        <tr>
+          <td>Descripción:</td>
+          <td><textarea id="descripcion" rows="5" cols="60" name="prod_description" placeholder="Ingrese una descripción del producto"></textarea></td>
+          <!--<td><input class = "input" type="text" name="prod_description"></td>-->
+        </tr>
 
-      <p>
-        Image: <input type = "file" name = "prod_img" accept = "image/*" />
-      </p>
+        <tr>
+          <td>Categoria:</td>
+          <td>
+            <select name="prod_category">
+              <option></option>
+              <option>Videojuegos</option>
+              <option>Hogar</option>
+              <option>Electronica</option>
+              <option>Ropa</option>
+              <option>Cosmeticos y belleza</option>
+              <option>Deportes</option>
+              <option>Educación</option>
+            </select>
+          </td>
+        </tr>
 
-      <p><input type="submit" value="Submit"></p>
+        <tr>
+          <td>Precio:</td>
+          <td><input class = "input" placeholder= "Precio en COP" type="text" name="prod_price"></td>
+        </tr>
+
+        <tr>
+          <td>Cantidad:</td>
+          <td><input class = "input" placeHolder = "Número de productos disponibles para la venta" type="text" name="prod_stock"></td>
+        </tr>
+
+        <tr>
+          <td>Imagenes:</td>
+          <td><input id= "inputImagenes" type = "file" name = "prod_img" accept = "image/*" /></td>
+        </tr>
+
+      </table>
+
+      <p><input id="inputSubmit" type="submit" value="Agregar"></p>
 
     </form>
   </main>
